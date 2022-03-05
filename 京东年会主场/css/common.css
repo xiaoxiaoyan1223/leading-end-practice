@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tdc0yl');
+    src:  url('../fonts/icomoon.eot?tdc0yl#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tdc0yl') format('truetype'),
+      url('../fonts/icomoon.woff?tdc0yl') format('woff'),
+      url('../fonts/icomoon.svg?tdc0yl#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+body {
+    background-color: rgb(170, 33, 33);
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.shortcut {
+    background-color: rgb(204, 58, 58);
+    height: 31px;
+    line-height: 31px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.left p {
+    display: inline;
+}
+.zhuce {
+    color: rgb(187, 74, 21);
+}
+.right ul li{
+    float: left;
+}
+.right ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 10px;
+}
+/* header {
+    height: 60px;
+    width: 100%; */
+
+header {
+    /* position: fixed; */
+    display: flex;
+    height: 60px;
+    /* padding-left: 30px; */
+    background-color: rgb(170, 33, 33);
+}
+.login {
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    background: url(../upload/新logo.png) no-repeat -71px;
+    background-size: 190px;
+    font-size: 0;
+}
+.user {
+    width: 160px;
+    height: 50px;
+    line-height: 60px;
+    font-size: 15px;
+    font-family: 'icomoon';
+    color: white;
+}
+.user::after {
+    font-family: 'icomoon';
+}
+.search {
+    flex: 1;
+    /* border: 2px solid rgb(27, 26, 26); */
+}
+.search input {
+    float: left;
+    width: 900px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 5px;
+    margin-left: 20px;
+    outline: none;
+    /* border: 0; */
+    padding-left: 10px;
+   color: dimgrey;
+   font-family: 'icomoon';
+}  
+.search button {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    background-color: rgb(170, 33, 33);
+    float: left;
+    border: 1px solid rgb(153, 146, 146);
+    border-left: none;
+}
+.banner {
+    margin-top: 10px;
+    position: relative;
+}
+.banner img {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.list {
+    display: inline-block;
+    width: 400px;
+    height: 368px;
+    border: 0;
+    margin-top: 0;
+}
+.list li {
+    height: 46px;
+    border-bottom: 1px solid white;
+    color: white;
+    font-family: 'icomoon';
+    line-height: 46px;
+    font-size: 15px;
+    padding-left: 10px;
+
+}
+.list ul {
+    position: relative;
+}
+.list li:hover {
+    background-color: white;
+    color: red;
+}
+.list li::after {   
+    position: absolute;
+    content: '\e902';
+    right: 5px;
+}
+.zhuti-hd img {
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.zhuti-bd {
+    width: 1200px;
+    margin-top: 10px;
+    display: flex;
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+.zhuti-bd li {
+    flex: 1;
+    margin-top: 5px;
+    
+}
+footer {
+    padding-top: 20px;
+    padding-left: 50px;
+    color: aliceblue;
+    background-color: rgb(182, 49, 60);
+    height: 400px;
+}
+footer .mod_service {
+    padding-bottom: 20px;
+    display: flex;
+    height: 62px;
+    border-bottom: 1px solid rgb(164, 164, 172);
+}
+footer .mod_service li {
+    width: 300px;
+    flex: 1;
+}
+footer .mod_service li h3 {
+    float: left;
+    height: 62px;
+    width: 52px;
+    background: url(../images/精灵图.png) no-repeat 0 18px;
+    overflow: hidden;
+}
+footer .mod_service li div {
+    margin-top: 25px;
+    
+}
+.mod_help {
+    height: 185px;
+    padding-top: 22px;
+    padding-left: 30px;
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(210, 210, 221);
+}
+.mod_help dl {
+    flex: 1;
+}
+.mod_help dl dd {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.mod_help dl dt {
+    font-size: 13px;
+    /* color: aliceblue; */
+}
+.mod_help dl dt a {
+    color: aliceblue;
+}
+.mod_copyright {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+/* .mod_copyright links {
+    margin-bottom: 5px;
+} */
+
