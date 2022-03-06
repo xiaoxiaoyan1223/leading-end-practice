@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            position: relative;
+            background-color: #ccc;
+            height: 560px;
+            /* background: url(images/bg1.png) no-repeat; */
+        }
+        .zero {
+            position: absolute;
+            bottom: 0;
+            width: 200px;
+            height: 100px;
+            background: url(images/bear.png) ;
+            animation: bear 1s steps(8) infinite,move 4s forwards;
+            z-index: 90;
+        }
+        @keyframes bear {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1600px 0;
+            }
+        }
+         @keyframes move {
+            0% {
+                left:0;
+            }
+            100% {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .first {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 250px;
+            animation: dong 10s linear infinite;
+            background: url(images/bg1.png) repeat-x;
+
+        }
+        .second {
+            position: absolute;
+            bottom: 80px;
+            width: 100%;
+            height: 366px;
+            animation: dong 20s linear infinite;
+            background: url(images/bg2.png) repeat-x;
+            animation-delay: 1s;
+            z-index: -1;
+        }
+        @keyframes dong {
+            0% {
+               background-position: 0 0;
+            }
+            100% {
+                background-position: -3840px 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div  class="zero"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+</body>
+</html>
