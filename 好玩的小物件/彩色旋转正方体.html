@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六彩魔方</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            perspective: 10000;
+        }
+        
+        section:hover .box {
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            /* border: 1px solid #000; */
+            margin: 100px auto;
+            perspective: 10000px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all ease 10s;
+        }
+        .box p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 200px;
+            width: 200px;
+
+        }
+        /* 正面 */
+        .box p:nth-child(1) {
+            background-color: rgba(236,82,102,0.486);
+            transform: translateZ(100px);
+        }
+        /* 上面 */
+        .box p:nth-child(2) {
+            background-color: rgb(219,56,211,0.486);
+
+            transform: rotateX(90deg) translateZ(100px);
+
+        }
+        /* 下面 */
+        .box p:nth-child(3) {
+            background-color: rgb(42,128,199,0.486);
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        /* 右侧面 */
+        .box p:nth-child(4) {
+            background-color: rgb(119,17,236,0.486);
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        /* 左侧面 */
+        .box p:nth-child(5) {
+            background-color: rgb(213,216,32,0.486);
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        /* 后面 */
+        .box p:nth-child(6) {
+            background-color: rgb(56,219,83,0.486);
+            transform: translateZ(-100px);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </section>
+</body>
+</html>
