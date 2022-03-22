@@ -1,0 +1,361 @@
+.top_nav {
+  height: 80px;
+  background-color: #07cbc9;
+  width: 100%;
+  position: relative;
+}
+.top_nav img {
+  margin-top: 9px;
+  margin-left: 50px;
+}
+.top_nav ul {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+.top_nav ul li {
+  float: left;
+  line-height: 80px;
+  margin: 0 8px;
+  color: aliceblue;
+  font-size: 14px;
+}
+.top_nav ul li a {
+  color: white;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  background-color: aqua;
+  height: 700px;
+  background: url(../images/banner3.jpg) no-repeat;
+}
+.banner .put {
+  position: absolute;
+  width: 512px;
+  top: 300px;
+  left: 550px;
+}
+.banner .put input {
+  width: 509px;
+  height: 39px;
+  background-color: transparent;
+  padding-left: 6px;
+  margin: 10px;
+  border: 2px solid #545757;
+  color: #292525;
+}
+.banner .put input:nth-child(4) {
+  height: 115px;
+  line-height: 0;
+}
+.banner .put button {
+  display: block;
+  margin-left: 213px;
+  margin-top: 30px;
+  background-color: transparent;
+  color: #b5b6b8;
+  font-size: 20px;
+}
+.about {
+  width: 100%;
+}
+.about h1 {
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
+}
+.about p {
+  margin: 5px auto;
+  text-align: center;
+  font-size: 12px;
+  color: #545757;
+}
+.about .zhuti {
+  position: relative;
+}
+.about .zhuti img {
+  margin-left: 309px;
+}
+.about .xuanfu {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+.about .xuanfu h2 {
+  font-size: 25px;
+  color: black;
+}
+.about .xuanfu span {
+  display: inline-block;
+  padding: 20px 10px;
+  background-color: rgba(247, 243, 243, 0.3);
+  width: 370px;
+  height: 248px;
+  border: 1px solid #cccc;
+  text-align: left;
+  font-size: 12px;
+  color: black;
+}
+.about .right_xuanfu1 {
+  border: 1px solid #07cbc9;
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  height: 144px;
+  width: 238px;
+}
+.about .right_xuanfu1 h1 {
+  margin-top: 18px;
+  margin-left: 24px;
+  font-size: 25px;
+  color: black;
+}
+.about .right_xuanfu1 p {
+  margin-top: 30px;
+  margin-left: 23px;
+  font-size: 16px;
+  color: #383232;
+}
+.about .right_xuanfu2 {
+  border: 1px solid #07cbc9;
+  position: absolute;
+  top: 183px;
+  right: 30px;
+  height: 144px;
+  width: 238px;
+}
+.about .right_xuanfu2 h1 {
+  margin-top: 18px;
+  margin-left: 24px;
+  font-size: 25px;
+  color: black;
+}
+.about .right_xuanfu2 p {
+  margin-top: 30px;
+  margin-left: 23px;
+  font-size: 16px;
+  color: #383232;
+}
+.img {
+  margin-top: 40px;
+  height: 650px;
+  width: 100%;
+  position: relative;
+}
+.img .sanjiao1 {
+  top: 146px;
+  left: 276px;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 20px solid transparent;
+  border-right-color: #07cbc9;
+}
+.img .sanjiao2 {
+  top: 146px;
+  left: 907px;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 20px solid transparent;
+  border-right-color: #07cbc9;
+}
+.img .sanjiao3 {
+  top: 425px;
+  left: 315px;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 20px solid transparent;
+  border-left-color: #07cbc9;
+}
+.img .sanjiao2 {
+  top: 425px;
+  left: 945px;
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 20px solid transparent;
+  border-left-color: #07cbc9;
+}
+.img li {
+  float: left;
+  width: 25%;
+  height: 310px;
+}
+.img li img {
+  width: 310px;
+}
+.img li:nth-child(2) {
+  padding: 30px;
+  background-color: #07cbc9;
+}
+.img li:nth-child(2) h2 {
+  font-size: 25px;
+  color: aliceblue;
+  font-weight: 700;
+}
+.img li:nth-child(2) .p1 {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: left;
+  color: rgba(240, 248, 255, 0.952);
+}
+.img li:nth-child(2) .p2 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: rgba(239, 244, 248, 0.842);
+}
+.img li:nth-child(2) button {
+  font-size: 14px;
+  padding: 8px;
+  margin-top: 18px;
+  margin-left: 86px;
+  background-color: #383232;
+  color: aliceblue;
+}
+.img li:nth-child(4) {
+  padding: 30px;
+  background-color: #07cbc9;
+}
+.img li:nth-child(4) h2 {
+  font-size: 25px;
+  color: aliceblue;
+  font-weight: 700;
+}
+.img li:nth-child(4) .p1 {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: left;
+  color: rgba(240, 248, 255, 0.952);
+}
+.img li:nth-child(4) .p2 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: rgba(239, 244, 248, 0.842);
+}
+.img li:nth-child(4) button {
+  font-size: 14px;
+  padding: 8px;
+  margin-top: 18px;
+  margin-left: 86px;
+  background-color: #383232;
+  color: aliceblue;
+}
+.img li:nth-child(5) {
+  padding: 30px;
+  background-color: #07cbc9;
+}
+.img li:nth-child(5) h2 {
+  font-size: 25px;
+  color: aliceblue;
+  font-weight: 700;
+}
+.img li:nth-child(5) .p1 {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: left;
+  color: rgba(240, 248, 255, 0.952);
+}
+.img li:nth-child(5) .p2 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: rgba(239, 244, 248, 0.842);
+}
+.img li:nth-child(5) button {
+  font-size: 14px;
+  padding: 8px;
+  margin-top: 18px;
+  margin-left: 86px;
+  background-color: #383232;
+  color: aliceblue;
+}
+.img li:nth-child(7) {
+  padding: 30px;
+  background-color: #07cbc9;
+}
+.img li:nth-child(7) h2 {
+  font-size: 25px;
+  color: aliceblue;
+  font-weight: 700;
+}
+.img li:nth-child(7) .p1 {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: left;
+  color: rgba(240, 248, 255, 0.952);
+}
+.img li:nth-child(7) .p2 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: rgba(239, 244, 248, 0.842);
+}
+.img li:nth-child(7) button {
+  font-size: 14px;
+  padding: 8px;
+  margin-top: 18px;
+  margin-left: 86px;
+  background-color: #383232;
+  color: aliceblue;
+}
+.gallery {
+  width: 100%;
+}
+.gallery h1 {
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
+}
+.gallery p {
+  margin: 5px auto;
+  text-align: center;
+  font-size: 12px;
+  color: #545757;
+}
+.gallery .flex {
+  margin: 0 auto;
+  width: 1100px;
+}
+.gallery .flex ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery .flex li {
+  margin-bottom: 20px;
+  flex: 1;
+  width: 360px;
+  height: 304px;
+}
+.gallery .flex li img {
+  width: 360px;
+  height: 240px;
+}
+.gallery .flex li p {
+  text-align: left;
+  padding: 0 10px;
+  height: 64px;
+  width: 360px;
+  background-color: #000000;
+  font-size: 14px;
+  line-height: 64px;
+  color: aliceblue;
+  margin: 0;
+}
+.footer {
+  height: 70px;
+  background-color: #07cbc9;
+}
+.footer p {
+  line-height: 70px;
+  text-align: center;
+  color: aliceblue;
+}
