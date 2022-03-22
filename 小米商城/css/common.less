@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?s6n6zs');
+    src:  url('../fonts/icomoon.eot?s6n6zs#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?s6n6zs') format('truetype'),
+      url('../fonts/icomoon.woff?s6n6zs') format('woff'),
+      url('../fonts/icomoon.svg?s6n6zs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+.w {
+    width: 1226px;
+    margin: 0 auto;
+}
+.top_nav {
+    
+    height: 40px;
+    background-color: rgb(51, 51, 51);
+    position: relative;
+    .left {
+        a {
+            color: #e0e0e0;
+            &:hover {
+                color: red;
+            }
+        }
+        width: 728px;
+        height: 40px;
+        line-height: 40px;
+        ul li {
+            float: left;
+            &:nth-child(even) {
+                margin: 0 6px;
+            }
+            // &:nth-child(odd) {
+            //     color: rgb(164, 176, 176);
+            // }
+        }
+    }
+    .right {
+        position: absolute;
+        right: 3px;
+        width: 236px;
+        height: 40px;
+        line-height: 40px;
+        top: 0px;
+        ul li {
+            float: left;
+            &:nth-child(even) {
+                margin: 0 6px;
+            }
+            font-family: 'iconfont';
+            color: aliceblue;
+            a {
+                color: aliceblue;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    
+}
+header {
+    height: 100px;
+    position: relative;
+    padding-top: 10px;
+    
+    .login {
+        position: absolute;
+        width: 62px;
+        padding-top: 20px;
+        img {
+            width: 56px;
+            height: 56px;
+        }
+    }
+    .header_nav {
+        position: absolute;
+        height: 100px;
+        width: 600px;
+        left: 300px;
+        ul li {
+            float: left;
+            padding: 0 8px;
+            line-height: 100px;
+            font-size: 16px;
+            color: #333333;
+        }
+    }
+    .search {
+        width: 300px;
+        height: 46px;
+        position: absolute;
+        right: 5px;
+        top: 29px;
+        border: 1px solid #696666;
+        input {
+            width: 245px;
+            height: 44px;
+            border: 0;
+            border-right: 1px solid #696666;
+            padding-left: 10px;
+        }
+        button {
+            text-align: center;
+            font-family: 'iconfont';
+            // padding-left: 10px;
+        }
+    }
+}
+footer {
+    height: 500px;
+    background-color: #fff;
+    
+    .footer_nav {
+        height: 95px;
+        // margin-top: 40px;
+        // margin-bottom: 40px;
+        border-bottom: 1px solid #e0e0e0;
+        // display: flex;
+        padding: 27px 0;
+        li {
+            float: left;
+            font-family: 'icomoon';
+            font-size: 23px;
+            &:nth-child(even) {
+                width: 5px;
+                height: 5px;
+                margin: 0 42px;
+                color: #e0e0e0;
+            }
+        }
+    }
+    .footer_dd {
+        height: 190px;
+        // border-right: 1px solid #e0e0e0;
+        padding: 20px 0;
+        dl {
+            float: left;
+            width: 160px;
+            &:nth-child(6) {
+                border-right: 1px solid #bbb;
+            }
+            dt {
+                margin-bottom: 18px;
+                font-size: 16px;
+                color: #404040;
+            }
+            dd {
+                font-size: 12px;
+                margin: 8px 0;
+                
+                }
+            
+        }
+        .phone {
+            margin-right: 53px;
+            float: right;
+            padding: 10px;
+            p {
+                text-align: center;
+                &:nth-child(1) {
+                    color: coral;
+                    font-size: 18px;
+                    text-align: center;
+                }
+                &:nth-child(2) {
+                    font-size: 12px;
+                    color: #bbb;
+                }
+                &:nth-child(3) {
+                    height: 30px;
+                    line-height: 30px;
+                    font-family: 'icomoon';
+                    border: 1px solid rgb(231, 119, 66);
+                    font-size: 14px;
+                    color: coral;
+                }
+                &:nth-child(4) {
+                    font-family: 'icomoon';
+                }
+            }
+        }
+    }
+        .right {
+            padding: 30px 0;
+            position: relative;
+            p {
+                position: absolute;
+                top: 30px;
+                // display: inline-block;
+                // margin-right:20px ;
+                // height: 80px;
+                img {
+                    width: 50px;
+                    height: 50px;
+    
+                }
+            }
+            span {
+                float: right;
+                margin-right: 200px;
+            }
+            
+        }
+    
+
+}
