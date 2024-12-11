@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 圆形 */
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius:50px;
+            text-align: center;
+        }
+        /* 椭圆 */
+        .oval{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            /* 水平方向的圆角半径为100px，垂直方向的圆角半径为50px */
+            border-radius: 100px / 50px;
+        }
+        /* 等边三角形 */
+        .triangle{
+            width: 0;
+            height: 0;
+            border:50px solid transparent;
+            /* border:border-width border-style border-color */
+            border-bottom:100px solid red ;
+
+        }
+        /* 直角三角形 */
+        .triangle1 {
+            width: 0;
+            height: 0;
+            margin-top: 10px;
+            border:100px solid blue;
+            border-top:100px solid transparent;
+            border-right:100px solid transparent
+        }
+        /* 梯形 */
+        
+        .tixing span{
+            width: 0;
+            height: 0;
+            display: inline-block;
+            border: 50px solid pink;
+        }
+        #two{
+            border-top:50px solid transparent;
+            border-right:50px solid transparent;
+            margin-left:-5px;
+        }
+        .trapezoid {
+            width: 100px;
+            height: 0;
+            /* border: 100px solid black; */
+            border-bottom: 100px solid black;
+            /* border-top: 50px solid transparent; */
+            border-right:50px solid transparent;
+            /* border-left:50px solid transparent; */
+        }
+        .pentagon{
+            position: relative;
+            width:54px;
+            /* 上 左右 下 */
+            border-width: 50px 18px 0;
+            border-style: solid;
+            /* 上下 左右 */
+            border-color: red transparent;
+        }
+        .pentagon:before{
+            content: '';
+            position: absolute;
+            height: 0;
+            width: 0;
+            left: -18px;
+            top: -84px;
+           border-width: 0 45px 35px;
+           border-style: solid;
+           border-color: transparent transparent red;
+        }
+        .parallelogram{
+            width: 150px;
+            height: 100px;
+            margin-left: 20px;
+            /* -webkit主要兼容Webkit内核的浏览器 如Safair */
+            /* -moz主要兼容基于Gecko内核的浏览器 如Firefox */
+            /* -o 主要用于兼容基于Presto内核的浏览器 如旧版Opera */
+            /* skew表示倾斜 */
+            -webkit-transform: skew(20deg);
+            -moz-transform: skew(20deg);
+            -o-transform: skew(20deg);
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="circle">圆形</div>
+        <div class="oval">椭圆</div>
+        <div class="triangle">等边三角形</div>
+        <div class="triangle1">直角三角形</div>
+        <div class="tixing">
+            <span></span>
+            <span id="two"></span>
+        </div>
+        <div class="trapezoid">梯形</div>
+        <div class="pentagon">五边形</div>
+        <div class="parallelogram">平行四边形</div>
+        
+    </div>
+</body>
+</html>
